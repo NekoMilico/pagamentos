@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="pagarcom.css">
+	<link rel="shortcutcut icon" type="image/x-icon" href="pix.ico">
+	<title>Paloma Christina da Silva</title>
+</head>
+<body>
+
+
+
+
+
+<div class="uppercase" style="margin: 15px; font-size: 20px;">
+	
+	<center>
+			<p style="margin-top: 35px;" class="t1">Olá Princesa!! </p>
+			<p class="t1">Só quero seu dinheiro</p>
+	</center>
+	
+</div>
+
+
+
+<div id="l1">
+	
+
+<img src="https://mcusercontent.com/ab74c9c18656a4e8509bc5bfa/images/ba9de648-4b91-2ed6-7465-32ea2668bfdf.png" id="codepix">
+
+
+	<div id="texto3">
+	<p>Valor: R$ 50,00 do dia 10/12/2021</p>
+	<p style="margin-bottom: 10px;">Copie essa chave para efetuar o pagamento:</p>
+	<input
+      type="text"
+      name="texto"
+      id="texto"
+      readonly
+      placeholder="Você não tem dívidas pendentes cmg :)"
+      value="00020126580014br.gov.bcb.pix013681f60564-1890-4be0-a133-436d5ddf3f72520400005303986540550.005802BR5916Gustavo Da Silva6009Sao Paulo62150511pcs101221506304133C"
+    />
+    <button onclick="copiarpix()">Copiar</button>
+
+
+	<p style="margin-top: 30px; margin-bottom: 30px;">É só clicar em "copiar"</p>
+
+	<p>Caso esteja usando Computador/Notebook</p>
+	<p class="uppercase" style="margin-bottom: 220px;">escaneie o código qr</p>
+	<p style="margin-top: -210px; margin-bottom: 200px;" id="sqr"><a href="https://mcusercontent.com/ab74c9c18656a4e8509bc5bfa/images/ba9de648-4b91-2ed6-7465-32ea2668bfdf.png" style="text-decoration: none;" class="uppercase">Clique aqui para ver o qr code!</a></p>
+	</div>
+
+
+</div>
+
+<div><center><p class="uppercase" style="margin-top: 20px;" id="tks">obrigado por devolver!!!!</p></center></div>
+
+
+
+
+
+
+
+
+
+
+    <script>
+      function copiarpix() {
+        let textoCopiado = document.getElementById("texto");
+        textoCopiado.select();
+        textoCopiado.setSelectionRange(0, 99999);
+        document.execCommand("copy");
+        alert("O código foi copiado com sucesso! Estamos aguardando o pagamento");
+      }
+    </script>
+
+    <div class="footer" id="footer"></div>
+    <script src="footer.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
