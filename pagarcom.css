@@ -61,16 +61,37 @@ h3{
 
 }
 
-
-
 }
+
+
+@media only screen and (min-width: 1160px){
+
+    #pix-cec {
+
+    width: 50%;
+
+}}
+
+@media only screen and (max-width: 1224px){
+
+    #pix-cec {
+
+    width: 45%;
+
+}}
+
+@media only screen and (max-width: 1160px){
+
+    #pix-cec {
+
+    width: 90%;
+
+}}
 
 #pix-cec {
 
-    width: 90%;
     color: white;
     background-color: #C0C0C0;
-
     border-color: transparent;
     border-radius: 5px;
     text-transform: uppercase;
@@ -230,7 +251,7 @@ h3{
 
 #sqr{display: none;}
 
-@media (max-width: 1080px){
+@media (max-width: 1160px){
  
     #codepix{display: none;}
 #sqr{display: block;}
