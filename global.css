@@ -39,3 +39,17 @@ body{
   margin: 10px;
   margin-bottom: 20px;
 }
+
+.adms{
+  display: flex;
+  justify-content: center;
+}
+
+.adms a{
+  color: white;
+  text-decoration: none;
+}
+
+.adms a:hover{
+  text-decoration: underline;
+}
