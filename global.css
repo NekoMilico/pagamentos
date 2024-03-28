@@ -53,3 +53,14 @@ body{
 .adms a:hover{
   text-decoration: underline;
 }
+
+.social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons{
+  width: 20%;
+  margin: 20px;
+}
