@@ -64,3 +64,26 @@ body{
   width: 20%;
   margin: 20px;
 }
+
+.down-vpn{
+  display: flex;
+  flex-direction: column;
+}
+
+.down-vpn a{
+  padding: 10px;
+  margin: 5px;
+  border: solid ;
+  border-radius: 25px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+.vpn-details{
+  width: 85%;
+}
+
+li{
+  margin: 5px;
+}
