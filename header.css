@@ -1,0 +1,293 @@
+/*     CONFIG DESKTOP     */
+
+@media (width > 768px) {
+  body {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .header {
+    margin-block: 3rem;
+    height: 3rem;
+    margin-bottom: 7rem;
+  }
+
+  .header * {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+  }
+
+  .header__bg {
+    background-color: #12236f;
+    padding: 1em;
+    height: 180%;
+    border-radius: 12px;
+  }
+
+  .header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header__logo {
+    width: 5rem;
+    height: 5rem;
+    border: solid white;
+    border-radius: 50%;
+  }
+
+  .header__logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  /* .header__nav{} */
+
+  .header__nav-itens {
+    display: flex;
+    gap: 0.3rem;
+  }
+
+  .header__nav-itens * {
+    color: #374092;
+    background: white;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 3px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .header__nav-link {
+    padding: 0.5rem;
+  }
+}
+
+/*     CONFIG CELULARES     */
+
+@media (width < 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .header{
+    margin-bottom: 2rem;
+  }
+
+  .header__bg{
+    background: #12236f;
+    padding: 1rem;
+}
+
+  .header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__logo-img {
+    width: 50px;
+    border-radius: 50%;
+    border: solid white;
+  }
+
+  .header__nav-itens {
+    display: flex;
+    gap: 5px;
+  }
+
+  .header__nav-itens a {
+    color: #374092;
+    background: white;
+    text-decoration: none;
+    font-size: 12px;
+    border-radius: 10px;
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+}
+
+
+@media (width < 420px){
+    .header__nav-link span{
+        display: none;
+    }
+}
+
+
+
+/* image swap */
+
+@media (width > 0px) {
+  .img__swap {
+    border-radius: 25%;
+  }
+
+  .img__swap-on {
+    transition: 1s;
+    cursor: pointer;
+  }
+
+  .img__swap1 {
+    display: block;
+  }
+
+  .img__swap2 {
+    display: none;
+  }
+
+  .img__swap:hover .img__swap-on {
+    transform: rotateY(1440deg);
+  }
+
+  .img__swap:hover .img__swap1 {
+    display: none;
+  }
+
+  .img__swap:hover .img__swap2 {
+    display: block;
+  }
+}
+
+/*_________________________________________________*/
+
+/* item selecionado */
+
+@media (width > 0px) {
+  .header__nav-itens *{
+        transition: .5s;
+    }
+
+    /* .header__nav-itens:hover a:not(:hover){
+        color: rgba(255, 255, 255, .2);
+        transition: .5s;
+    } */
+
+  .header__nav-itens:hover .header__nav-link *:not(.header__nav-link:hover *) {
+    color: #3740927c;
+  }
+}
+
+/*_________________________________________________*/
+
+
+
+
+/* FOOTER */
+
+@media (width > 768px){
+
+footer{
+  text-align: center;
+  text-transform: uppercase;
+  background: #12236f;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25%;
+  margin-block: 15px;
+  border-radius: 12px;
+}
+
+footer ul{
+  display: flex;
+  flex-direction: column;
+  margin-block: 25px;
+  gap: 15px;
+}
+
+footer a {
+  color: rgba(255, 255, 255, .5);
+  text-decoration: none;
+  transition: .2s;
+}
+
+footer a:hover{
+  font-style: normal;
+  color: white;
+}
+
+.footer-icon{
+  display: none;
+}
+
+}
+
+
+@media (width < 768px){
+
+  footer{
+    list-style: disc;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    background: #12236f;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    margin-block: 15px;
+    border-radius: 12px;
+  }
+
+  footer ul{
+    display: flex;
+    flex-direction: column;
+    margin-block: 25px;
+    gap: 15px;
+  }
+
+  footer a {
+    color: rgba(255, 255, 255, .5);
+    text-decoration: none;
+    transition: .2s;
+    font-size: 15px;
+  }
+
+  footer a:hover{
+    font-style: normal;
+    color: white;
+  }
+
+  .footer-icon{
+    display: none;
+  }
+
+}
+
+@media (width < 350px){
+.twitter{
+  display: none;
+}
+
+.telapequena{
+  display: block;
+  margin-block: 50px;
+  margin-inline: 10px;
+  border: solid;
+  padding-block: 50px;
+}
+  .footer-text{
+    display: none;
+  }
+  .footer-icon{
+    display: block;
+  }
+}
+
+
+/*_________________________________________________*/
+
+
+
